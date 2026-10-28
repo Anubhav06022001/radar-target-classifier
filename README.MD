@@ -1,32 +1,3 @@
-radar-target-classifier/
-│
-├── data/                  # Data directory (contains raw/processed outputs)
-│   ├── raw/               # Raw generated or downloaded radar sequence arrays (.npy / .csv)
-│   └── processed/         # Scaled features and train/test splits
-│
-├── notebooks/             # Jupyter notebooks for EDA and rapid experimentation
-│   └── 01_eda_exploration.ipynb
-│
-├── src/                   # Core source code package (Modular Python files)
-│   ├── __init__.py
-│   ├── data_loader.py     # Data simulation or loading routines
-│   ├── features.py        # Statistical feature extraction for SVM & RF
-│   ├── models.py          # Class definitions for SVM, Random Forest, RNN, and LSTM
-│   └── evaluate.py        # Metrics computation (Accuracy, Precision, Recall, Confusion Matrix)
-│
-├── outputs/               # Saved model artifacts, evaluation metrics, and generated slides
-│   ├── models/            # Saved .pkl or .pt model weights
-│   └── figures/           # Confusion matrices and performance comparison plots
-││
-├── tests/                 # Unit tests for data shapes and model pipeline components
-│   └── test_pipeline.py
-│
-├── .gitignore
-├── requirements.txt       # Dependencies (numpy, pandas, scikit-learn, torch, matplotlib, python-pptx)
-├── README.md              # Professional documentation detailing architecture and results
-└── main.py                # Main orchestration script to run the entire pipeline end-to-end
-
-
 # Radar Target Classification using Micro-Doppler Signatures
 
 A production-grade machine learning and deep learning pipeline for classifying aerial targets (Birds, Drones, Aircraft, Stealth UAVs) using radar micro-Doppler time-series data. Developed for robotics navigation and defense applications.
